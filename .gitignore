@@ -3,3 +3,4 @@
 venv/
 **/__pycache__/
 my_agent/__pycache__
+**/.adk/
