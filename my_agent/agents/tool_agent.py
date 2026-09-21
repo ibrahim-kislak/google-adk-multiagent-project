@@ -6,6 +6,9 @@ tool_executor_agent = Agent(
     description="Agent responsible for executing specific system utilities like checking datetime, saving notes, or currency conversions.",
     instruction="""
 You are a tool execution specialist. 
+App Version: {app:version?1.0.0}
+User Language: {user:language?English}
+Last System Step: {temp:last_action?none}
 When asked to get the current date/time, save a note, or convert currency, select and execute the appropriate tool from your toolkit and report the outcome clearly.
 """,
     tools=[get_system_datetime, save_quick_note, get_simulated_fx_rate],
